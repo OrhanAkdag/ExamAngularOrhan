@@ -16,6 +16,7 @@
     <thead>
       <tr>
         <th scope="col">#</th>
+        <th scope="col">Date entrée</th>
         <th scope="col">Modèle</th>
         <th scope="col">Marque</th>
         <th scope="col">Type</th>
@@ -29,6 +30,7 @@
     <tbody>
       <tr *ngFor="let computer of computers">
         <th scope="row" class="lineComputer">{{computer.id}}</th>
+        <td>{{computer.dateEnterStock | date: 'shortDate'}}</td>
         <td>{{computer.model}}</td>
         <td>{{computer.brand}}</td>
         <td>{{computer.type}}</td>
