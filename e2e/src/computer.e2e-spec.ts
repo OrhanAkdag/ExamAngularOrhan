@@ -2,7 +2,7 @@
 import {browser, by, element, logging} from 'protractor';
 import {ComputerPage} from './computer.po';
 
-describe('Test de nos chaussures', () => {
+describe('Test de nos ordinateurs', () => {
   let page: ComputerPage;
   let nbLineInit: number;
 
