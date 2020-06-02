@@ -31,7 +31,8 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
     this.isLoading = true;
     this.computerService.getComputers().subscribe((data: Computer[]) =>{
-      this.computers = data;
+      this.computers = data['hydra:member'];
+      console.log(data);
       this.isLoading = false;
     });
   }

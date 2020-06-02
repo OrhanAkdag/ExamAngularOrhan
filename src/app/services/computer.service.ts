@@ -12,7 +12,7 @@ export class ComputerService {
   brand = ['Dell', 'HP', 'Apple', 'Asus'];
   type = ['Portable', 'Fixe', 'Tablette hybride'];
   category = ['Gaming', 'Bureautique', 'Premier prix'];
-  urlApi = 'http://localhost:3000/computers';
+  urlApi = 'http://localhost:8000/api/computers';
 
   constructor(private httpClient: HttpClient) { }
 
